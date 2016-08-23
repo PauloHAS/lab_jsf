@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+
+	<h3>LADO ESQUERDO</h3>
+	<form>
+		<hr />
+		<h:panelGrid cellspadding="2">
+	Navegação estática Implicita
+	<h:commandButton value="ir para index" action="index" />
+			<h:commandButton value="ir para pagina 1" action="Pagina1" />
+		</h:panelGrid>
+
+		<hr />
+
+		<h:panelGrid cellpadding="2">
+	Navegação Dinamica Implicita
+	<h:commandButton value="ir para o index"
+				action="#{navegaçãoBean.navegacaoDinamicaExplicaIndex()}" />
+			<h:commandButton value="ir para pagina 1"
+				action="#{navegaçãoBean.navegacaoDinamicaExplicaPagina1()}" />
+		</h:panelGrid>
+
+		<hr />
+
+		<h:panelGrid cellpadding="2">
+			<h:commandButton value="ir para index"
+				action="NavegaçaoExplicitaIndex" />
+			<h:commandButton value="ir para pagina 1"
+				action="NavegacaoExplicitaPagina1" />
+		</h:panelGrid>
+
+		<hr />
+
+		<h:panelGrid cellpadding="2">
+		Navegação Dinamca Explicita
+		<h:commandButton value="ir para index"
+				action="#{navegaçãoBean.navegacaoDinamicaExplicaIndex()}" />
+			<h:commandButton value="ir para pagina 1"
+				action="#{navegaçãoBean.navegacaoDinamicaExplicaPagina1()}" />
+		</h:panelGrid>
+	</form>
+
+
+</body>
+</html>
