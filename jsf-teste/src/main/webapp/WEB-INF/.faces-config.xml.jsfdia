@@ -1,22 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PROCESS model-entity="JSFProcess">
- <PROCESS-ITEM NAME="rules:" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
-  <PROCESS-ITEM ID="rules::0" NAME="item" model-entity="JSFProcessItem">
-   <PROCESS-ITEM-OUTPUT ID="NavegaçaoExplicitaIndex::#lab4#index.xhtml"
-    NAME="output" PATH="/lab4/index.xhtml"
-    TARGET="rules:#lab4#index.xhtml" TITLE="NavegaçaoExplicitaIndex" model-entity="JSFProcessItemOutput"/>
-  </PROCESS-ITEM>
- </PROCESS-ITEM>
- <PROCESS-ITEM NAME="rules::1" SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
-  <PROCESS-ITEM ID="rules::1" NAME="item" model-entity="JSFProcessItem">
-   <PROCESS-ITEM-OUTPUT
-    ID="NavegacaoExplicitaPagina1::#lab4#pagina1.xhtml" NAME="output"
-    PATH="/lab4/pagina1.xhtml" TARGET="rules:#lab4#pagina1.xhtml"
-    TITLE="NavegacaoExplicitaPagina1" model-entity="JSFProcessItemOutput"/>
-  </PROCESS-ITEM>
- </PROCESS-ITEM>
- <PROCESS-ITEM NAME="rules:#lab4#pagina1.xhtml"
-  PATH="/lab4/pagina1.xhtml" SHAPE="240,145,0,0" model-entity="JSFProcessGroup"/>
- <PROCESS-ITEM NAME="rules:#lab4#index.xhtml" PATH="/lab4/index.xhtml"
-  SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
-</PROCESS>
+<PROCESS model-entity="JSFProcess"/>

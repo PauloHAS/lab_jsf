@@ -4,6 +4,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
     version="2.2">
+    <!-- 
     <navigation-rule>
     	<navigation-case>
     		<from-outcome>NavegaçaoExplicitaIndex</from-outcome>
@@ -16,7 +17,7 @@
     		<to-view-id>/lab4/pagina1.xhtml</to-view-id>
     	</navigation-case>
     </navigation-rule>   
-    
+     -->
     <application>
     	<locale-config>
     		<default-locale>pt_BR</default-locale>
