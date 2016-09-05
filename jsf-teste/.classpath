@@ -26,7 +26,15 @@
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-			<attribute name="owner.project.facets" value="jboss.m2"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/afterdark-1.0.5.jar"/>
+	<classpathentry kind="lib" path="lib/dark-hive-1.0.10.jar"/>
+	<classpathentry kind="lib" path="D:/Ambiente de Desenvolvimento/Temas Primefaces/afterdark-1.0.5.jar"/>
+	<classpathentry kind="lib" path="D:/Ambiente de Desenvolvimento/Temas Primefaces/dark-hive-1.0.10.jar"/>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
