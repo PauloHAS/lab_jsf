@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+</h:head>
+<h:body>
+	<h:form>
+		<p:messages autoUpdate="true" />
+		<p:panelGrid columns="2">
+			<f:facet name="header">CADASTRO</f:facet>
+
+			<p:outputLabel for="name" value="Nome" />
+			<p:inputText id="name" value="#{cadastroBean.nome}" />
+
+			<p:outputLabel value="Email" for="email" />
+			<p:inputText id="email" value="#{cadastroBean.email}" required="true"
+				label="senha" />
+
+			<p:outputLabel value="Senha" for="senha" />
+			<p:password id="senha" value="#{cadastroBean.senha}" required="true"
+				label="senha" />
+
+			<f:facet name="footer">
+				<p:commandButton value="Cadastrar"
+					action="#{cadastroBean.cadastrar}" icon="ui-icon-disk"
+					iconPos="right"></p:commandButton>
+			</f:facet>
+
+		</p:panelGrid>
+	</h:form>
+</h:body>
+</html>
