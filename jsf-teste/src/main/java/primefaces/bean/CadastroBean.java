@@ -2,8 +2,10 @@ package primefaces.bean;
 
 import java.io.Serializable;
 
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
+import javax.faces.context.FacesContext;
 
 @ManagedBean
 @ViewScoped
@@ -39,5 +41,17 @@ public class CadastroBean implements Serializable {
 		System.out.println("Email: " + this.email);
 		System.out.println("Senha: " + this.senha);
 		
+	}
+	
+	public void verificarDisponibilidade(){
+		
+		FacesMessage msg = null;
+		if("joão".equalsIgnoreCase(this.nome)){
+			msg=new FacesMessage("Usúario Indisponível");
+			msg.setSeverity(FacesMessage.SEVERITY_WARN);
+		}else{
+			msg=new FacesMessage("Usuario Disponivel");
+		}
+		FacesContext.getCurrentInstance().addMessage(null, msg);
 	}
 }
